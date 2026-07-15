@@ -509,6 +509,11 @@ a {
     margin: 0 auto;
   }
 
+  .availability-pill {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .quick-facts {
     width: max-content;
     max-width: 100%;
@@ -570,5 +575,45 @@ a {
   .github-cta {
     align-items: flex-start;
     flex-direction: column;
+  }
+}
+
+
+.availability-pill {
+  width: max-content;
+  max-width: 100%;
+  margin-bottom: 14px;
+  padding: 8px 13px;
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  border: 1px solid color-mix(in srgb, var(--accent) 42%, var(--line));
+  border-radius: 999px;
+  background: linear-gradient(135deg, color-mix(in srgb, var(--accent) 16%, var(--surface)), var(--surface));
+  color: var(--accent-dark);
+  font-size: 0.88rem;
+  font-weight: 800;
+  letter-spacing: 0.01em;
+  box-shadow: 0 10px 25px rgba(17, 205, 180, 0.12);
+}
+
+.availability-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #20c878;
+  box-shadow: 0 0 0 5px rgba(32, 200, 120, 0.14);
+  animation: availabilityPulse 2s ease-in-out infinite;
+}
+
+@keyframes availabilityPulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  50% {
+    transform: scale(0.78);
+    opacity: 0.65;
   }
 }

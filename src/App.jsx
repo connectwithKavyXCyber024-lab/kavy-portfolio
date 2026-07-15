@@ -4,7 +4,7 @@ import {
   Linkedin,
   Instagram,
   Mail,
-  MapPin,
+  Sparkles,
   GraduationCap,
   Coffee,
   Moon,
@@ -143,7 +143,12 @@ function Home({ setPage }) {
       </div>
 
       <div className="hero-content">
-        <p className="eyebrow">Hello, welcome to my portfolio</p>
+        <div className="availability-pill">
+          <span className="availability-dot" aria-hidden="true"></span>
+          Code • Create • Evolve
+        </div>
+
+        <p className="eyebrow">Turning ideas into interactive digital experiences</p>
 
         <h1>
           Hi, I&apos;m <span>Kavy</span> <span className="wave">👋</span>
@@ -157,8 +162,8 @@ function Home({ setPage }) {
             fueled by curiosity and chai
           </p>
           <p>
-            <MapPin aria-hidden="true" />
-            based in Sagar, Madhya Pradesh, India
+            <Sparkles aria-hidden="true" />
+            building AI-powered web experiences
           </p>
           <p>
             <GraduationCap aria-hidden="true" />
